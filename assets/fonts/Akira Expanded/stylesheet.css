@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Akira Expanded Bold';
+    src: url('Akira Bold.otf');
+    src: local('Akira Expanded Bold'), local('Akira Bold'),
+        url('Akira Bold.otf') format('opentype'),
+        url('Akira Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Akira Expanded Super Bold';
+    src: url('Akira Super Bold.otf');
+    src: local('Akira Expanded Super Bold'), local('Akira Super Bold'),
+        url('Akira Super Bold.otf') format('opentype'),
+        url('Akira Super Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Akira Expanded Outline';
+    src: url('Akira Outline.otf');
+    src: local('Akira Expanded Outline'), local('Akira Outline'),
+        url('Akira Outline.otf') format('opentype'),
+        url('Akira Outline.ttf') format('truetype');
+}
+
+.AkiraExpanded-Bold {
+    font-family: 'Akira Expanded Bold';
+}
+
+.AkiraExpanded-SuperBold {
+    font-family: 'Akira Expanded Super Bold';
+}
+
+.AkiraExpanded-Outline {
+    font-family: 'Akira Expanded Outline';
+}

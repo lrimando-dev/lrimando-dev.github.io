@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets\logo\NULL Logo white.svg" />
+    <title>Luis Rimando | Developer Portfolio</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Fonts -->
+    <link href = "assets/fonts/Blender Pro/stylesheet.css" rel ="stylesheet" type ="text/css" />
+    <link href = "assets/fonts/Akira Expanded/stylesheet.css" rel ="stylesheet" type ="text/css" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://www.nerdfonts.com/assets/css/webfont.css" />
+          
+
+    <link rel="stylesheet" href="css/styles.css"  type ="text/css"/>
+    <script src="js/script.js" type="text/javascript"></script>
+</head>
+
+<body class="bg-dark-custom">
+    <header class="header container-fluid BlenderPro-Bold fixed-top">
+        <div class="row justify-content-between align-items-center border-bottom border-2 mx-2 mx-sm-3 mx-md-4 mx-lg-5 py-2" id="topLine">
+            <div class="col">
+                <img src="assets\logo\Wordmark wLogo white.svg" alt="Profile Picture" height="30">
+            </div>
+            <div class="col text-end fs-5">
+                <i class="bi bi-list" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-end bg-dark text-white border-start border-3 BlenderPro" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header border-bottom border-secondary py-3">
+            <h5 id="offcanvasRightLabel" class="text-uppercase fw-bold mb-0 AkiraExpanded-Bold">Navigation</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link text-white py-2 px-3 mb-2 border-bottom border-2 border-transparent text-uppercase hover-effect" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link text-white py-2 px-3 mb-2 border-bottom border-2 border-transparent text-uppercase hover-effect" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link text-white py-2 px-3 mb-2 border-bottom border-2 border-transparent text-uppercase hover-effect" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link text-white py-2 px-3 mb-2 border-bottom border-2 border-transparent text-uppercase hover-effect" href="#about">About</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link text-white py-2 px-3 border-bottom border-2 border-transparent text-uppercase hover-effect" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="container-fluid p-0 BlenderPro">
+
+        <section id="home" class="min-vh-100 d-flex align-items-center text-white">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Left Content -->
+                    <div class="col-12 col-lg-7 order-2 order-lg-1">
+                        <h1 class="display-3 fw-bold AkiraExpanded-Outline">HELLO, I'M</h1>
+                        <h1 class="display-3 fw-bold mb-4 bg-light-custom AkiraExpanded-Bold text-custom-black text-center">LUIS RIMANDO</h1>
+                        <p class="display-6 mb-4">Software Developer</p>
+                        <div class="mb-5">
+                            <p class="lead">
+                                Eager to launch my software engineering career and contribute to a dynamic team. My strong foundation in computer engineering and programming, combined with a proactive approach to learning new technologies, allows me to develop efficient and effective software solutions. I am committed to continuous professional growth and optimizing workflows to maximize productivity.
+                            </p>
+                        </div>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="https://github.com/Luisifer15" target="_blank" class="btn btn-outline-light btn-lg rounded-0">
+                                <i class="bi bi-github me-2"></i>GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/rimando-la" target="_blank" class="btn btn-outline-light btn-lg rounded-0">
+                                <i class="bi bi-linkedin me-2"></i>LinkedIn
+                            </a>
+                            <a href="mailto:alfonsorimando.dev@gmail.com" class="btn btn-outline-light btn-lg rounded-0">
+                                <i class="bi bi-envelope me-2"></i>Email
+                            </a>
+                            <a href="assets/LuisAlfonsoRimando-Dev-CV.pdf" download class="btn btn-outline-light btn-lg rounded-0">
+                                <i class="bi bi-file-earmark-arrow-down me-2"></i>CV
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Image Carousel -->
+                    <div class="col-12 col-lg-5 order-1 order-lg-2 d-none d-lg-block">
+                        <div id="profileCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner ratio ratio-2x3 border border-2 border-light">
+                                <div class="carousel-item">
+                                    <img src="assets/img/Personal/LR1.png" class="d-block w-100 object-fit-cover" alt="Luis Rimando 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Personal/LR2.png" class="d-block w-100 object-fit-cover" alt="Luis Rimando 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Personal/LR3.png" class="d-block w-100 object-fit-cover" alt="Luis Rimando 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Personal/LR4.png" class="d-block w-100 object-fit-cover" alt="Luis Rimando 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Personal/LR5.png" class="d-block w-100 object-fit-cover" alt="Luis Rimando 5">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="assets/img/Personal/LR6.png" class="d-block w-100 object-fit-cover" alt="Luis Rimando 6">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="min-vh-100 d-flex align-items-center justify-content-center bg-light-custom">
+            <div class="container-fluid py-5">
+                <h1 class="text-center mb-5 BlenderPro-Bold bg-dark text-white">Skills</h1>
+                <div class="row g-4">
+                    <!-- Left Column - Software Engineering -->
+                    <div class="col-12 col-lg-6 pe-lg-4">
+                        <div class="card rounded-0 border-4 border-dark shadow-none h-100">
+                            <div class="card-header bg-dark text-white p-3 rounded-0">
+                                <h2 class="mb-0 fs-4 BlenderPro-Bold">
+                                    <i class="bi bi-code-square me-2"></i>
+                                    SOFTWARE ENGINEERING
+                                </h2>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="row g-4">
+                                    <!-- Web Development -->
+                                    <div class="col-12">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none">
+                                            <div class="card-header bg-secondary text-white rounded-0">
+                                                <h3 class="fs-5 mb-0">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Web Development
+                                                </h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4 mb-3 mb-md-0">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-code-slash me-2"></i>Languages:</p>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-csharp-plain"></i> C#
+                                                                <ul class="list-group list-group-flush">
+                                                                    <li class="list-group-item"></li>
+                                                                        <li class="list-group-item">
+                                                                            <i class="devicon-dotnetcore-plain"></i> ASP.NET Core
+                                                                        </li>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-html5-plain"></i> HTML
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-css3-plain"></i> CSS
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-javascript-plain"></i> JavaScript
+                                                                <ul class="list-group list-group-flush">
+                                                                    <li class="list-group-item"></li>
+                                                                    <li class="list-group-item list-group-item-warning">
+                                                                        <i class="devicon-react-plain"></i> React.js [Learning]
+                                                                    </li>
+                                                                    <li class="list-group-item list-group-item-warning">
+                                                                        <i class="devicon-nodejs-plain"></i> Node.js [Learning]
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-php-plain"></i> PHP
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3 mb-md-0">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-tools me-2"></i>Tools:</p>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-visualstudio-plain"></i> Visual Studio
+                                                                <ul class="list-group list-group-flush">
+                                                                </ul>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-vscode-plain"></i> Visual Studio Code
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-microsoftsqlserver-plain"></i> Microsoft SQL SMS
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-database me-2"></i>Database:</p>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-microsoftsqlserver-plain"></i> Microsoft SQL
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-mysql-plain"></i> MySQL
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-firebase-plain"></i> Firebase
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Mobile Development -->
+                                    <div class="col-12">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none">
+                                            <div class="card-header bg-secondary text-white rounded-0">
+                                                <h3 class="fs-5 mb-0">
+                                                    <i class="bi bi-phone me-2"></i>
+                                                    Mobile Development
+                                                </h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4 mb-3 mb-md-0">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-code-slash me-2"></i>Language:</p>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-kotlin-plain"></i> Kotlin
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3 mb-md-0">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-code-slash me-2"></i>Language:</p>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-androidstudio-plain"></i> AndroidStudio
+                                                                <ul class="list-group list-group-flush">
+                                                                    <li class="list-group-item"></li>
+                                                                    <li class="list-group-item">
+                                                                        <i class="devicon-jetpackcompose-plain"></i> Jetpack Compose
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-database me-2"></i>Database:</p>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-firebase-plain"></i> Firebase
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-realm-plain"></i> Realm
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-sqldeveloper-plain"></i> NoSQL
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Embedded Systems -->
+                                    <div class="col-12">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none">
+                                            <div class="card-header bg-secondary text-white rounded-0">
+                                                <h3 class="fs-5 mb-0">
+                                                    <i class="bi bi-credit-card-2-front me-2"></i>
+                                                    Embedded Systems Development
+                                                </h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3 mb-md-0">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-terminal me-2"></i>Other Languages:</p>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-c-plain"></i> C
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-arduino-plain"></i> C++ (Arduino API)
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3 mb-md-0">
+                                                        <p class="fw-bold mb-2"><i class="nf nf-fae-chip me-2"></i>Microcontrollers:</p>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-arduino-plain"></i> Arduino Boards
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="nf nf-md-cpu_32_bit"></i> ESP32
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="nf nf-fa-microchip"></i> ESP8266
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Technical Skills -->
+                                    <div class="col-12">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none">
+                                            <div class="card-header bg-secondary text-white rounded-0">
+                                                <h3 class="fs-5 mb-0">
+                                                    <i class="bi bi-gear me-2"></i>
+                                                    Technical Skills
+                                                </h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4 mb-3 mb-md-0">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-terminal me-2"></i>Other Languages:</p>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-python-plain"></i> Python
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3 mb-md-0">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-terminal me-2"></i>IDE:</p>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-vscode-plain"></i> Visual Studio Code
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-arduino-plain"></i> Arduino IDE
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-git me-2"></i>Version Control:</p>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <i class="devicon-git-plain"></i> Git
+                                                                <ul class="list-group list-group-flush">
+                                                                    <li class="list-group-item"></li>
+                                                                    <li class="list-group-item">
+                                                                        <i class="devicon-github-plain"></i> GitHub
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Right Column - Hardware and Professional -->
+                    <div class="col-12 col-lg-6 ps-lg-4 d-flex flex-column">
+                        <!-- Hardware and Systems -->
+                        <div class="card rounded-0 border-4 border-dark shadow-none mb-4 flex-grow-1 d-flex flex-column">
+                            <div class="card-header bg-dark text-white p-3 rounded-0">
+                                <h2 class="mb-0 fs-4 BlenderPro-Bold">
+                                    <i class="bi bi-cpu me-2"></i>
+                                    HARDWARE AND SYSTEMS
+                                </h2>
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="row g-4 flex-grow-1">
+                                    <!-- Hardware Knowledge-->
+                                    <div class="col-12 d-flex flex-column">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none flex-grow-1 d-flex flex-column">
+                                            <div class="card-header bg-secondary text-white rounded-0">
+                                                <h3 class="fs-5 mb-0">
+                                                    <i class="bi bi-motherboard me-2"></i>
+                                                    Circuit Design
+                                                </h3>
+                                            </div>
+                                            <div class="card-body d-flex flex-column flex-grow-1">
+                                                <ul class="list-unstyled mb-0 flex-grow-1">
+                                                    <li class="mb-2 d-flex">
+                                                        <i class="bi bi-cpu-fill me-2 mt-1"></i>
+                                                        <span>Experienced in VHDL for hardware description, including designing and simulating digital circuits</span>
+                                                    </li>
+                                                    <li class="d-flex">
+                                                        <i class="bi bi-diagram-3 me-2 mt-1"></i>
+                                                        <span>Proficient in designing and wiring advanced logic circuits, including processor-level designs</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Computer Hardware Knowledge -->
+                                    <div class="col-12 d-flex flex-column">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none flex-grow-1 d-flex flex-column">
+                                            <div class="card-header bg-secondary text-white rounded-0">
+                                                <h3 class="fs-5 mb-0">
+                                                    <i class="bi bi-pc-display-horizontal"></i>
+                                                    Computer Hardware Knowledge
+                                                </h3>
+                                            </div>
+                                            <div class="card-body d-flex flex-column flex-grow-1">
+                                                <ul class="list-unstyled mb-0 flex-grow-1">
+                                                    <li class="mb-2 d-flex">
+                                                        <i class="bi bi-gpu-card me-2 mt-1"></i>
+                                                        <span>Strong understanding of computer hardware, including CPU, GPU, RAM, and storage technologies.</span>
+                                                    </li>
+                                                    <li class="d-flex">
+                                                        <i class="bi bi-pc-display me-2 mt-1"></i>
+                                                        <span>Proficient in building, installing, and troubleshooting hardware </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Linux Knowledge -->
+                                    <div class="col-12 d-flex flex-column">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none flex-grow-1 d-flex flex-column">
+                                            <div class="card-header bg-secondary text-white rounded-0">
+                                                <h3 class="fs-5 mb-0">
+                                                    <i class="devicon-linux-plain"></i>
+                                                    Linux Knowledge
+                                                </h3>
+                                            </div>
+                                            <div class="card-body d-flex flex-column flex-grow-1">
+                                                <div class="row flex-grow-1">
+                                                    <div class="col-md-6 mb-3 mb-md-0 d-flex flex-column">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-gear-wide-connected me-2"></i>Distributions:</p>
+                                                        <ul class="list-group list-group-flush flex-grow-1">
+                                                            <li class="list-group-item list-group-item-success">
+                                                                <i class="nf nf-linux-kubuntu"></i> Kubuntu [Main]
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="nf nf-fa-ubuntu"></i> Ubuntu
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="nf nf-linux-debian"></i> Debian
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="nf nf-md-linux_mint"></i> Mint
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3 mb-md-0 d-flex flex-column">
+                                                        <p class="fw-bold mb-2"><i class="bi bi-pc-display me-2"></i>Skills:</p>
+                                                        <ul class="list-group list-group-flush flex-grow-1">
+                                                            <li class="list-group-item">
+                                                                <i class="bi bi-terminal me-2"></i> Command Line Navigation
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="bi bi-folder me-2"></i></i> File and Directory Management
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="bi bi-download me-2"></i> Package Installation (apt, flatpak, dpkg)
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <i class="bi bi-lightbulb me-2"></i> Novice Level General Knowledge
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- Professional Competencies -->
+                        <div class="card rounded-0 border-4 border-dark shadow-none">
+                            <div class="card-header bg-dark text-white p-3 rounded-0">
+                                <h2 class="mb-0 fs-4 BlenderPro-Bold">
+                                    <i class="bi bi-person-workspace me-2"></i>
+                                    PROFESSIONAL COMPETENCIES
+                                </h2>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none">
+                                            <div class="card-body text-center p-3">
+                                                <i class="bi bi-person-fill-gear fs-4 mb-2"></i>
+                                                <p class="mb-0 fw-bold">Leadership Skills</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none">
+                                            <div class="card-body text-center p-3">
+                                                <i class="bi bi-chat-dots fs-4 mb-2"></i>
+                                                <p class="mb-0 fw-bold">Communication</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none">
+                                            <div class="card-body text-center p-3">
+                                                <i class="bi bi-kanban fs-4 mb-2"></i>
+                                                <p class="mb-0 fw-bold">Organization</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none">
+                                            <div class="card-body text-center p-3">
+                                                <i class="bi bi-list-check fs-4 mb-2"></i>
+                                                <p class="mb-0 fw-bold">Prioritization</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none">
+                                            <div class="card-body text-center p-3">
+                                                <i class="bi bi-people fs-4 mb-2"></i>
+                                                <p class="mb-0 fw-bold">Teamwork</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card rounded-0 border-3 border-dark shadow-none">
+                                            <div class="card-body text-center p-3">
+                                                <i class="bi bi-arrow-repeat fs-4 mb-2"></i>
+                                                <p class="mb-0 fw-bold">Adaptability</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="projects" class="min-vh-100 d-flex align-items-center justify-content-center text-white">
+            <h1>Projects Section</h1>
+        </section> -->
+        <section id="projects" class="min-vh-100 d-flex align-items-center justify-content-center text-white">
+            <div class="container py-5">
+                <h1 class="text-center mb-5 BlenderPro-Bold">Projects</h1>
+                <div class="row g-4">
+
+                    <!-- Project Card 1 -->
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch order-3">
+                        <div class="bg-dark rounded-0 shadow w-100 d-flex flex-column">
+                            <!-- Header with Project Name and Date -->
+                            <div class="p-3 d-flex justify-content-between align-items-center border-bottom border-secondary">
+                                <h3 class="mb-0 fs-4">RentaRide</h3>
+                                <small class="text-secondary">June 2024</small>
+                            </div>
+                            
+                            <!-- Content Section -->
+                            <div class="p-4 bg-secondary text-white">
+                                <div class="row g-4">
+                                    <div class="col-md-5 col-12 order-md-2 order-1">
+                                        <div class="border border-dark ratio ratio-16x9">
+                                            <img src="assets/img/Projects/RentaRide/RentaRide-1.png" alt="Project Preview" class="img-fluid w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-12 order-md-1 order-2">
+                                        <div class="mb-3">
+                                            <p class="mb-0">
+                                                Web-based Fleet Management and Car Rental Solution
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Action Buttons -->
+                            <div class="row g-0 mt-auto">
+                                <div class="col-6">
+                                    <button class="btn rounded-0 w-100 h-100 p-3 text-white border-top border-end border-dark position-relative overflow-hidden transition-all" 
+                                            data-bs-toggle="modal" 
+                                            data-bs-target="#project1Modal">
+                                        <div class="position-relative">View Details</div>
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <a href="https://github.com/pjgrspe/RentaRide" 
+                                       class="btn rounded-0 w-100 h-100 p-3 text-white border-top border-dark position-relative overflow-hidden transition-all">
+                                        <div class="position-relative">GitHub</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch order-4">
+                        <div class="bg-dark rounded-0 shadow w-100 d-flex flex-column">
+                            <!-- Header with Project Name and Date -->
+                            <div class="p-3 d-flex justify-content-between align-items-center border-bottom border-secondary">
+                                <h3 class="mb-0 fs-4">ICE</h3>
+                                <small class="text-secondary">June 2023</small>
+                            </div>
+                            
+                            <!-- Content Section -->
+                            <div class="p-4 bg-secondary text-white">
+                                <div class="row g-4">
+                                    <div class="col-md-5 col-12 order-md-2 order-1">
+                                        <div class="border border-dark ratio ratio-16x9">
+                                            <img src="assets/img/Projects/ICE/ICE-1.png" alt="Project Preview" class="img-fluid w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-12 order-md-1 order-2">
+                                        <div class="mb-3">
+                                            <p class="mb-0">
+                                                Feature-Rich browser based password repository
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Action Buttons -->
+                            <div class="row g-0 mt-auto">
+                                <div class="col-6">
+                                    <button class="btn rounded-0 w-100 h-100 p-3 text-white border-top border-end border-dark position-relative overflow-hidden transition-all" 
+                                            data-bs-toggle="modal" 
+                                            data-bs-target="#project2Modal">
+                                        <div class="position-relative">View Details</div>
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <a href="https://github.com/pjgrspe/NetRunners-Password-Repository" 
+                                       class="btn rounded-0 w-100 h-100 p-3 text-white border-top border-dark position-relative overflow-hidden transition-all">
+                                        <div class="position-relative">GitHub</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 3 -->
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch order-1">
+                        <div class="bg-dark rounded-0 shadow w-100 d-flex flex-column">
+                            <!-- Header with Project Name and Date -->
+                            <div class="p-3 d-flex justify-content-between align-items-center border-bottom border-secondary">
+                                <h3 class="mb-0 fs-4">PASADA - [IN DEVELOPMENT]</h3>
+                                <small class="text-secondary">June 2025</small>
+                            </div>
+                            
+                            <!-- Content Section -->
+                            <div class="p-4 bg-secondary text-white">
+                                <div class="row g-4">
+                                    <div class="col-md-5 col-12 order-md-2 order-1">
+                                        <div class="border border-dark ratio ratio-16x9">
+                                            <img src="assets/img/Projects/ProjectACART/ACART-1.png" alt="Project Preview" class="img-fluid w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-12 order-md-1 order-2">
+                                        <div class="mb-3">
+                                            <p class="mb-0">
+                                                Internal Name: Project ACART <br />
+                                                Android app for jeepney route tracking and navigation
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Action Buttons -->
+                            <div class="row g-0 mt-auto">
+                                <div class="col-12">
+                                    <button class="btn rounded-0 w-100 h-100 p-3 text-white border-top border-end border-dark position-relative overflow-hidden transition-all" 
+                                            data-bs-toggle="modal" 
+                                            data-bs-target="#project3Modal">
+                                        <div class="position-relative">View Details</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch order-2">
+                        <div class="bg-dark rounded-0 shadow w-100 d-flex flex-column">
+                            <!-- Header with Project Name and Date -->
+                            <div class="p-3 d-flex justify-content-between align-items-center border-bottom border-secondary">
+                                <h3 class="mb-0 fs-4">Project LABWATCH - [IN DEVELOPMENT]</h3>
+                                <small class="text-secondary">June 2025</small>
+                            </div>
+                            
+                            <!-- Content Section -->
+                            <div class="p-4 bg-secondary text-white">
+                                <div class="row g-4">
+                                    <div class="col-md-5 col-12 order-md-2 order-1">
+                                        <div class="border border-dark ratio ratio-16x9">
+                                            <img src="assets/img/Projects/ProjectLabWatch/LabWatch-1.png" alt="Project Preview" class="img-fluid w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-12 order-md-1 order-2">
+                                        <div class="mb-3">
+                                            <p class="mb-0">
+                                                Android app for monitoring science laboratory alerts and emergencies
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Action Buttons -->
+                            <div class="row g-0 mt-auto">
+                                <div class="col-12">
+                                    <button class="btn rounded-0 w-100 h-100 p-3 text-white border-top border-end border-dark position-relative overflow-hidden transition-all" 
+                                            data-bs-toggle="modal" 
+                                            data-bs-target="#project4Modal">
+                                        <div class="position-relative">View Details</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5 -->
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch order-5">
+                        <div class="bg-dark rounded-0 shadow w-100 d-flex flex-column">
+                            <!-- Header with Project Name and Date -->
+                            <div class="p-3 d-flex justify-content-between align-items-center border-bottom border-secondary">
+                                <h3 class="mb-0 fs-4">GameLive</h3>
+                                <small class="text-secondary">October 2024</small>
+                            </div>
+                            
+                            <!-- Content Section -->
+                            <div class="p-4 bg-secondary text-white">
+                                <div class="row g-4">
+                                    <div class="col-md-5 col-12 order-md-2 order-1">
+                                        <div class="border border-dark ratio ratio-16x9">
+                                            <img src="assets/img/Projects/GameLive/GameLive-0.png" alt="Project Preview" class="img-fluid w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-12 order-md-1 order-2">
+                                        <div class="mb-3">
+                                            <p class="mb-0">
+                                                Android app for tracking video game progress, using IGDB API for scraping game listings
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Action Buttons -->
+                            <div class="row g-0 mt-auto">
+                                <div class="col-6">
+                                    <button class="btn rounded-0 w-100 h-100 p-3 text-white border-top border-end border-dark position-relative overflow-hidden transition-all" 
+                                            data-bs-toggle="modal" 
+                                            data-bs-target="#project5Modal">
+                                        <div class="position-relative">View Details</div>
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <a href="https://github.com/Luisifer15/GameLive" 
+                                       class="btn rounded-0 w-100 h-100 p-3 text-white border-top border-dark position-relative overflow-hidden transition-all">
+                                        <div class="position-relative">GitHub</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+            <!-- Project 1 Modal -->
+            <div class="modal fade" id="project1Modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content rounded-0 bg-dark text-white border border-secondary">
+                        <div class="modal-header border-secondary">
+                            <h5 class="modal-title">RentaRide</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="project1Carousel" class="carousel slide">
+                            <div class="carousel-inner rounded-0">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/Projects/RentaRide/RentaRide-1.png" class="d-block w-100" alt="Project Screenshot 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/RentaRide/RentaRide-2.png" class="d-block w-100" alt="Project Screenshot 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/RentaRide/RentaRide-3.png" class="d-block w-100" alt="Project Screenshot 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/RentaRide/RentaRide-4.png" class="d-block w-100" alt="Project Screenshot 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/RentaRide/RentaRide-5.png" class="d-block w-100" alt="Project Screenshot 5">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        
+                        <div class="modal-body bg-secondary">
+                            <p class="mb-4">
+                                A comprehensive platform for vehicle rental operations and fleet administration, offering efficient order processing, vehicle tracking, and maintenance management.
+                                <ul>Features:
+                                    <li>Fleet & Rental Management – Seamless booking, rental order tracking, and fleet utilization.</li>
+                                    <li>Vehicle Documentation & Security – Secure storage and image encryption for critical documents.</li>
+                                    <li>Car Maintenance & Alerts – Maintenance logs and timed notifications for scheduled servicing.</li>
+                                    <li>User & Role Management – Separate admin and consumer portals, plus driver assignment tools.</li>
+                                    <li>Robust Database & Security – Scalable architecture with secure authentication.</li>
+                                    <li>Responsive & Intuitive UI – Accessible on all devices with a user-friendly interface.</li>
+                                </ul>
+                            </p>
+
+                            
+                        </div>
+                        <div class="modal-body border border-secondary">
+                            <h6 class="fw-bold mb-3">Technologies Used</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">ASP.NET Core</span>
+                                <span class="badge bg-secondary">Entity Framework</span>
+                                <span class="badge bg-secondary">MS SQL</span>
+                                <span class="badge bg-secondary">Arduino</span>
+                                <span class="badge bg-secondary">Mapbox</span>
+                                <span class="badge bg-secondary">GPS Tracking</span>
+                                <span class="badge bg-secondary">Bootstrap</span>
+                                <span class="badge bg-secondary">MD5 Encryption</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Project 2 Modal -->
+            <div class="modal fade" id="project2Modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content rounded-0 bg-dark text-white border border-secondary">
+                        <div class="modal-header border-secondary">
+                            <h5 class="modal-title">ICE</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="project2Carousel" class="carousel slide">
+                            <div class="carousel-inner rounded-0">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/Projects/ICE/ICE-1.png" class="d-block w-100" alt="Project Screenshot 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/ICE/ICE-2.png" class="d-block w-100" alt="Project Screenshot 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/ICE/ICE-3.png" class="d-block w-100" alt="Project Screenshot 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/ICE/ICE-4.png" class="d-block w-100" alt="Project Screenshot 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/ICE/ICE-5.png" class="d-block w-100" alt="Project Screenshot 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/ICE/ICE-6.png" class="d-block w-100" alt="Project Screenshot 6">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#project2Carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#project2Carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        
+                        <div class="modal-body bg-secondary">
+                            <p class="mb-4">
+                                A secure and user-friendly password management solution, designed to store, manage, and protect sensitive credentials. With advanced encryption, automation, and accessibility features, it ensures seamless password handling while maintaining strong security protocols.
+                                <ul>Features:
+                                    <li>Data Encryption – Implements strong encryption algorithms to protect stored passwords from unauthorized access.</li>
+                                    <li>Intuitive UI Design – Clean, user-friendly interface for easy navigation and efficient password management.</li>
+                                    <li>Recycle Bin Dashboard – Allows users to recover accidentally deleted passwords before permanent removal.</li>
+                                    <li>Variable-Controlled Password Generator – Generates strong, customizable passwords based on length and complexity preferences.</li>
+                                    <li>Automatic Lock During Idle – Enhances security by locking the repository after a period of inactivity to prevent unauthorized access.</li>
+                                    <li>Copy Directly to Clipboard – Enables one-click password copying, improving convenience without exposing credentials on-screen.</li>
+                                </ul>
+                            </p>
+
+                            
+                        </div>
+                        <div class="modal-body border border-secondary">
+                            <h6 class="fw-bold mb-3">Technologies Used</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">ASP.NET</span>
+                                <span class="badge bg-secondary">MS SQL</span>
+                                <span class="badge bg-secondary">Bootstrap</span>
+                                <span class="badge bg-secondary">MD5 Encryption</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+            <!-- Project 3 Modal -->
+            <div class="modal fade" id="project3Modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content rounded-0 bg-dark text-white border border-secondary">
+                        <div class="modal-header border-secondary">
+                            <h5 class="modal-title">PASADA - [IN DEVELOPMENT]</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="project3Carousel" class="carousel slide">
+                            <div class="carousel-inner rounded-0">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/Projects/ProjectACART/ACART-1.png" class="d-block w-100" alt="Project Screenshot 1">
+                                </div>
+                            </div>
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#project3Carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#project3Carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button> -->
+                        </div>
+                        
+                        <div class="modal-body bg-secondary">
+                            <p class="mb-4">
+                                Internal Name: Project ACART <br /> 
+                                A comprehensive navigation solution designed to enhance jeepney route tracking, passenger convenience, and urban mobility. This app provides real-time updates, route optimization, and reporting tools, making public transport more efficient and accessible for both locals and tourists
+                                <ul>Features:
+                                    <li>Real-Time Tracking – Displays live jeepney locations to help users plan their trips efficiently.</li>
+                                    <li>Report System – Allows passengers and drivers to report delays, overcrowding, and other issues to improve service reliability.</li>
+                                    <li>Tourist Navigation – Provides tourist-friendly route guidance, ensuring easier access to key destinations via jeepneys.</li>
+                                    <li>Route Planning – Offers optimized jeepney route suggestions based on traffic, distance, and travel time.</li>
+                                    <li>Heatmap Integration – Visualizes high-traffic areas and congestion zones, helping users and operators make informed decisions.</li>
+                                </ul>
+                            </p>
+
+                            
+                        </div>
+                        <div class="modal-body border border-secondary">
+                            <h6 class="fw-bold mb-3">Technologies Used</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">Android Studio</span>
+                                <span class="badge bg-secondary">Firebase</span>
+                                <span class="badge bg-secondary">Mapbox</span>
+                                <span class="badge bg-secondary">Jetpack Compose</span>
+                                <span class="badge bg-secondary">ESP Boards</span>
+                                <span class="badge bg-secondary">GPS Tracking</span>
+                                <span class="badge bg-secondary">AI analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Project 4 Modal -->
+            <div class="modal fade" id="project4Modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content rounded-0 bg-dark text-white border border-secondary">
+                        <div class="modal-header border-secondary">
+                            <h5 class="modal-title">Project LABWATCH - [IN DEVELOPMENT]</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="project2Carousel" class="carousel slide">
+                            <div class="carousel-inner rounded-0">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/Projects/ProjectLabWatch/LabWatch-1.png" class="d-block w-100" alt="Project Screenshot 1">
+                                </div>
+                            </div>
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#project2Carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#project2Carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button> -->
+                        </div>
+                        
+                        <div class="modal-body bg-secondary">
+                            <p class="mb-4">
+                                A cutting-edge monitoring solution designed to enhance safety and efficiency in science laboratories. Utilizing IoT sensors, AI-driven analysis, and real-time alerts, this app ensures proactive response to emergencies and lab conditions.
+                                <ul>Features:
+                                    <li>Real-Time Monitoring – Continuously tracks lab conditions and equipment status for immediate oversight.</li>
+                                    <li>IoT Sensor Integration – Connects with smart sensors to detect hazardous changes in temperature, gas levels, or other critical parameters.</li>
+                                    <li>Server-Hosted Infrastructure – Ensures secure data storage and processing for reliable system performance.</li>
+                                    <li>Client API – Enables seamless integration with third-party applications and monitoring systems.</li>
+                                    <li>Real-Time Alerts – Instantly notifies users of emergencies, anomalies, or potential hazards via push notifications.</li>
+                                    <li>AI Image Processing – Utilizes computer vision to detect unsafe lab conditions, such as spills, fires, or unauthorized access.</li>
+                                </ul>
+                            </p>
+
+                            
+                        </div>
+                        <div class="modal-body border border-secondary">
+                            <h6 class="fw-bold mb-3">Technologies Used</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">Android Studio</span>
+                                <span class="badge bg-secondary">Firebase</span>
+                                <span class="badge bg-secondary">Jetpack Compose</span>
+                                <span class="badge bg-secondary">IoT</span>
+                                <span class="badge bg-secondary">ESP32</span>
+                                <span class="badge bg-secondary">AI Computer Vision</span>
+                                <span class="badge bg-secondary">Real Time System</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 Modal -->
+            <div class="modal fade" id="project5Modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content rounded-0 bg-dark text-white border border-secondary">
+                        <div class="modal-header border-secondary">
+                            <h5 class="modal-title">GameLive</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="project5Carousel" class="carousel slide">
+                            <div class="carousel-inner rounded-0">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/Projects/GameLive/GameLive-1.png" class="d-block w-100" alt="Project Screenshot 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/GameLive/GameLive-2.png" class="d-block w-100" alt="Project Screenshot 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/GameLive/GameLive-3.png" class="d-block w-100" alt="Project Screenshot 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Projects/GameLive/GameLive-4.png" class="d-block w-100" alt="Project Screenshot 4">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#project5Carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#project5Carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        
+                        <div class="modal-body bg-secondary">
+                            <p class="mb-4">
+                                A feature-rich gaming companion designed for players to track, rate, and review their video game experiences. Powered by the IGDB API, this app provides comprehensive game listings while allowing users to manage their gaming backlog, progress, and reviews—akin to a "Letterboxd for games."
+                                <ul>Features:
+                                    <li>IGDB API Integration – Fetches detailed game information, including titles, release dates, genres, and cover art.</li>
+                                    <li>Saving Ratings & Reviews – Allows users to rate and review games, helping build a personal gaming journal.</li>
+                                    <li>Game Status Management – Track progress by marking games as "Playing", "Finished", or "To Be Played."</li>
+                                    <li>Backlog Organization – Easily add unfinished games to a dedicated backlog for better tracking.</li>
+                                    <li>Personalized Game Lists – Create custom collections, such as favorite games, all-time classics, or must-play titles.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="modal-body border border-secondary">
+                            <h6 class="fw-bold mb-3">Technologies Used</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">Android Studio</span>
+                                <span class="badge bg-secondary">Firebase</span>
+                                <span class="badge bg-secondary">Jetpack Compose</span>
+                                <span class="badge bg-secondary">IGDB API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="min-vh-100 d-flex align-items-center justify-content-center bg-light-custom">
+            <div class="container py-5">
+                <div id="aboutCarousel" class="carousel slide" data-bs-interval="false">
+                    <div class="carousel-inner">
+                        <!-- About Me Card -->
+                        <div class="carousel-item active px-5">
+                            <div class="card rounded-0 border-dark border-3 h-100">
+                                <div class="card-body p-4 d-flex flex-column" style="min-height: 560px;">
+                                    <div class="row h-100 align-items-center">
+                                        <div class="col-lg-8 BlenderPro-Bold">
+                                            <h2 class="display-4 fw-bold mb-4 BlenderPro-Heavy">ABOUT ME</h2>
+                                            <p class="lead mb-4">
+                                                A highly motivated <b>Computer Engineering student</b> (expected graduation 2025, Angeles University Foundation) with a passion for building robust and efficient backend systems.                                             
+                                            </p>
+                                            <p class="lead mb-4">
+                                                I bring a strong analytical mindset and a data-driven approach to every project, enabling me to identify opportunities for optimization and deliver impactful results. Thriving in collaborative environments, where I leverage my problem-solving skills and encourage open communication to foster team synergy and achieve shared goals. 
+                                            </p>
+                                            <p class="lead mb-4">
+                                                Eager to contribute to innovative projects and explore emerging technologies, I'm seeking opportunities to apply my skills and contribute to a forward-thinking organization. My interests lie in the intersection of software and hardware, with a focus on creating efficient and scalable solutions.
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 text-center">
+                                            <img src="assets/logo/NULL Logo black.svg" alt="Personal Logo" class="img-fluid" style="max-width: 200px;">
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-end">
+                                        <button class="btn btn-dark" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                                            Next <i class="bi bi-arrow-right ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Work Experience Card -->
+                        <div class="carousel-item px-5">
+                            <div class="card rounded-0 border-dark border-3 h-100">
+                                <div class="card-header rounded-0 bg-dark text-white py-3">
+                                    <h2 class="mb-0 fs-4 fw-bold">WORK EXPERIENCE</h2>
+                                </div>
+                                <div class="card-body p-4 d-flex flex-column" style="min-height: 500px;">
+                                    <div class="mb-4">
+                                        <h3 class="fs-5 fw-bold">Technical Operations and Management Intern</h3>
+                                        <p class="text-secondary mb-2">January 2023 - Present</p>
+                                        <p class="fw-bold mb-1">TGI-Systems</p>
+                                        <p class="text-secondary mb-2">Tempe, AZ</p>
+                                        <p>
+                                            ● Ensure optimal software performance and minimize downtime by debugging system issues.
+                                        </p>
+                                        <p>
+                                            ● Designing promotional coupons for clients, maintaining accuracy and brand consistency.
+                                        </p>
+                                        <p>
+                                            ● Observe team management processes to gain valuable insights into effective leadership and collaboration.
+                                        </p>
+                                    </div>
+                                    <div class="mt-auto d-flex justify-content-between">
+                                        <button class="btn btn-dark" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                                            <i class="bi bi-arrow-left me-2"></i> Previous
+                                        </button>
+                                        <button class="btn btn-dark" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                                            Next <i class="bi bi-arrow-right ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Education Card -->
+                        <div class="carousel-item px-5">
+                            <div class="card rounded-0 border-dark border-3 h-100">
+                                <div class="card-header rounded-0 bg-dark text-white py-3">
+                                    <h2 class="mb-0 fs-4 fw-bold">EDUCATION & ACHIEVEMENTS</h2>
+                                </div>
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="row g-4">
+                                        <!-- Current Academic Status -->
+                                        <div class="col-md-6 mb-4">
+                                            <h3 class="fs-5 fw-bold border-bottom border-2 pb-2">CURRENT ACADEMIC STATUS</h3>
+                                            <p class="fw-bold mb-2">Bachelor of Science in Computer Engineering - Angeles University Foundation</p>
+                                            <p class="mb-1"><i class="bi bi-dot"></i>Expected Graduation: July 2025</p>
+                                            <p class="mb-0"><i class="bi bi-dot"></i>Current GWA: 92.59</p>
+                                        </div>
+                        
+                                        <!-- Educational Attainment -->
+                                        <div class="col-md-6 mb-4">
+                                            <h3 class="fs-5 fw-bold border-bottom border-2 pb-2">EDUCATIONAL ATTAINMENT</h3>
+                                            <div class="mb-3">
+                                                <p class="fw-bold mb-1">Junior High School</p>
+                                                <p class="mb-0">Claro M. Recto Information and Communication Technology High School (2015 - 2019)</p>
+                                            </div>
+                                            <div>
+                                                <p class="fw-bold mb-1">Senior High School</p>
+                                                <p class="mb-0">Angeles University Foundation Integrated School (2019 - 2021)</p>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Achievements -->
+                                        <div class="col-12 mb-4">
+                                            <h3 class="fs-5 fw-bold border-bottom border-2 pb-2">ACHIEVEMENTS</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-2"><i class="bi bi-dot"></i>With Honors, Junior High School, Claro M. Recto Information and Communication Technology High School (2017–2019)</li>
+                                                <li class="mb-2"><i class="bi bi-dot"></i>Best in Technology and Livelihood Education in ICT, Junior High School, Claro M. Recto Information and Communication Technology High School (2019)</li>
+                                                <li class="mb-2"><i class="bi bi-dot"></i>Special Citation in Science, Junior High School, Claro M. Recto Information and Communication Technology High School (2019)</li>
+                                                <li class="mb-2"><i class="bi bi-dot"></i>Bronze Academic Achievement / With Honors, Senior High School, Angeles University Foundation Integrated School (2019–2021)</li>
+                                                <li class="mb-2"><i class="bi bi-dot"></i>College Scholar, 1st-3rd Year College, Angeles University Foundation (2021–2024)</li>
+                                                <li class="mb-2"><i class="bi bi-dot"></i>University Scholar, 4th Year College, Angeles University Foundation (2024)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Navigation Buttons -->
+                                    <div class="mt-auto d-flex justify-content-between">
+                                        <button class="btn btn-dark" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                                            <i class="bi bi-arrow-left me-2"></i> Previous
+                                        </button>
+                                        <button class="btn btn-dark" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                                            Next <i class="bi bi-arrow-right ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Org Card -->
+                        <div class="carousel-item px-5">
+                            <div class="card rounded-0 border-dark border-3 h-100">
+                                <div class="card-header rounded-0 bg-dark text-white py-3">
+                                    <h2 class="mb-0 fs-4 fw-bold">Organization History</h2>
+                                </div>
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="row g-4">
+                                        <!-- Organizations & Leadership -->
+                                        <div class="col-12 mb-4">
+                                            <h3 class="fs-5 fw-bold border-bottom border-2 pb-2">ORGANIZATIONS & LEADERSHIP EXPERIENCES</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-2"><i class="bi bi-dot"></i>President, CMRICTHS Young Scientist's Club | Claro M. Recto Information and Communication Technology High School (2018–2019)</li>
+                                                <li class="mb-2"><i class="bi bi-dot"></i>Technical Director, AUF College of Engineering and Architecture Athletics and Talents Support Squad (AUF CEAATSS) | Angeles University Foundation (2023–2024)</li>
+                                                <li class="mb-2"><i class="bi bi-dot"></i>Vice President for Internal Affairs, Institute of Computer Engineers of the Philippines Student Edition (ICpEP.SE) AUF Chapter | (2023–2024)</li>
+                                                <li class="mb-2"><i class="bi bi-dot"></i>Vice President, AUF College of Engineering and Architecture Athletics and Talents Support Squad (AUF CEAATSS) | Angeles University Foundation (2024–Current)</li>
+                                                <li class="mb-2"><i class="bi bi-dot"></i>President, Institute of Computer Engineers of the Philippines Student Edition (ICpEP.SE) AUF Chapter | Angeles University Foundation (2024–Current)</li>
+                                                <li class="mb-0"><i class="bi bi-dot"></i>Vice President for Internal Affairs, Institute of Computer Engineers of the Philippines Student Edition (ICpEP.SE) Region III | (2024–Current)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Navigation Buttons -->
+                                    <div class="mt-auto">
+                                        <button class="btn btn-dark" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                                            <i class="bi bi-arrow-left me-2"></i> Previous
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="contact" class="min-vh-100 d-flex align-items-center justify-content-center text-white">
+            <h1>Contact Section</h1>
+        </section> -->
+    </main>
+
+    <footer class="footer container-fluid fixed-bottom">
+        <div class="row align-items-center border-top border-2 mx-2 mx-sm-3 mx-md-4 mx-lg-5 py-2" id="bottomLine">
+            <div class="col" id="FooterLinks">
+                <a href="https://github.com/Luisifer15" target="_blank" class="btn btn-outline-light rounded-0">
+                    <i class="bi bi-github"></i>
+                </a>    
+                <a href="https://linkedin.com/in/rimando-la" target="_blank" class="btn btn-outline-light rounded-0">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="mailto:alfonsorimando.dev@gmail.com" target="_blank" class="btn btn-outline-light rounded-0">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="assets/LuisAlfonsoRimando-Dev-CV.pdf" download class="btn btn-outline-light rounded-0">
+                    <i class="bi bi-file-earmark-arrow-down"></i>
+                </a>
+            </div>
+            <div class="col text-end BlenderPro-Thin fs-6 d-none d-sm-block">
+                Neuromancer
+            </div>
+            <!-- <div class="col text-end BlenderPro-Thin fs-6 d-none d-sm-block" >
+                Dev // Netrunner // Rockerboy
+            </div>  -->
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

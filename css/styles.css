@@ -1,0 +1,83 @@
+:root {
+    --black-color: #151515;
+    --white-color: #f0f0f0;
+}
+
+.bg-dark-custom {
+    background-color: var(--black-color);
+}
+
+.bg-light-custom {
+    background-color: var(--white-color);
+}
+
+.text-custom-black {
+    color: var(--black-color) !important;
+}
+
+.text-custom-white {
+    color: var(--white-color) !important;
+}
+
+    /* Custom Ratios for Bootstrap 5 */
+.ratio-2x3 {
+    --bs-aspect-ratio: 150%;
+}
+/* X-Small */
+@media (max-width: 575px) {
+    .ratio-xs-2x3 {
+        --bs-aspect-ratio: 150%;
+    }
+}
+/* Small */
+@media (min-width: 576px) {
+    .ratio-sm-2x3 {
+        --bs-aspect-ratio: 150%;
+    }
+}
+/* Medium */
+@media (min-width: 768px) {
+    .ratio-md-2x3 {
+        --bs-aspect-ratio: 150%;
+    }
+}
+/* Large */
+@media (min-width: 992px) {
+    .ratio-lg-2x3 {
+        --bs-aspect-ratio: 150%;
+    }
+}
+/* Extra large */
+@media (min-width: 1200px) {
+    .ratio-xl-2x3 {
+        --bs-aspect-ratio: 150%;
+    }
+}
+/* Extra extra large */
+@media (min-width: 1400px) {
+    .ratio-xxl-2x3 {
+        --bs-aspect-ratio: 150%;
+    }
+}
+
+.btn.border-top:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    #aboutCarousel {
+        height: 800px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #aboutCarousel {
+        height: 900px !important;
+    }
+}
+
+.nav-link:hover {
+    background-color: var(--white-color) !important;
+    color: var(--black-color) !important;
+    border-color: var(--white-color) !important;
+}
