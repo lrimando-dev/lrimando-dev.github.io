@@ -19,7 +19,7 @@
     color: var(--white-color) !important;
 }
 
-    /* Custom Ratios for Bootstrap 5 */
+/* Custom Ratios for Bootstrap 5 */
 .ratio-2x3 {
     --bs-aspect-ratio: 150%;
 }
@@ -80,4 +80,17 @@
     background-color: var(--white-color) !important;
     color: var(--black-color) !important;
     border-color: var(--white-color) !important;
+}
+
+.org-name {
+    display: block;
+    font-weight: normal;
+    margin-left: 1.5em;
+}
+
+.org-details {
+    display: block;
+    font-weight: normal;
+    margin-left: 1.5em;
+    color: #6c757d; /* Optional: Add a lighter color for the details */
 }
